@@ -5,7 +5,7 @@ import NewItem from "./new-item";
 import itemsData from '../week-7/items.json';
 
 export default function Page() {
-    const [items, setItems] = useState([]);
+    const [items, setItems] = useState(itemsData);
     
     const handleAddItem = (newItem) => {
         setItems([...items, newItem])
